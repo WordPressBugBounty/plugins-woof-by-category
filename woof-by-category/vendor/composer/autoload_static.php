@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitca29bb5efb97f0ef107e6ff40fb3650d
+class ComposerStaticInit31c70ed85453e056daf118d11377efe6
 {
     public static $prefixLengthsPsr4 = array (
-        'K' => 
+        'K' =>
         array (
             'KAGG\\WoofByCategory\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'KAGG\\WoofByCategory\\' => 
+        'KAGG\\WoofByCategory\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src/php',
         ),
@@ -28,9 +28,9 @@ class ComposerStaticInitca29bb5efb97f0ef107e6ff40fb3650d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitca29bb5efb97f0ef107e6ff40fb3650d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitca29bb5efb97f0ef107e6ff40fb3650d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitca29bb5efb97f0ef107e6ff40fb3650d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit31c70ed85453e056daf118d11377efe6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit31c70ed85453e056daf118d11377efe6::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit31c70ed85453e056daf118d11377efe6::$classMap;
 
         }, null, ClassLoader::class);
     }
